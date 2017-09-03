@@ -1,0 +1,9 @@
+.badge { /*bootstrap properties need to be overwritten*/
+  line-height: 20px !important; /*believe it or not, this actually centers the text within the surrounding panel*/
+  width: 20px !important;
+  padding: 0 !important;
+  background: #D73B3A !important;
+  position: relative !important;
+  top: -15px !important;
+  left: -15px !important;
+}

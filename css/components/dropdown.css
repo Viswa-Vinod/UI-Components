@@ -1,0 +1,7 @@
+.dropdown-menu {
+  box-shadow: none; /*bootstrap's dropdown comes with a shadow; we are killing that here*/
+}
+.dropdown-menu a {
+  font-weight: lighter !important;
+  color: #E6E6E6 !important;
+}

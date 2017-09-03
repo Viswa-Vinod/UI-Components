@@ -1,0 +1,86 @@
+
+.slantedDivA {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: rgba(40, 40, 40, 1);
+      box-sizing: border-box;
+      padding: 30px;
+      color: #fff;
+      
+    }
+
+    .slantedDivB {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: rgba(100, 40, 40, 1);
+      box-sizing: border-box;
+      padding: 60px 30px 30px 30px;
+      color: #fff;
+      z-index: -2;
+    }
+
+.slantedDivA:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: skewY(2deg);
+
+    }﻿
+
+ 
+
+/*.slantedDivB:before {
+      position: absolute;
+      
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index: -3;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top right;
+      transform: skewY(2deg);
+    }﻿*/
+
+/*.slantedDivB {
+      position: relative;
+      border: 2px solid red;
+      
+      width: 100%;
+      height: 200px;
+      background: rgba(40, 40, 40, 1);
+      box-sizing: border-box;
+      padding: 30px;
+      color: #fff;
+      margin-top: 100px;
+    }
+*/
+/*.slantedDivB:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: yellow;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top right;
+      transform: skewY(-2deg);
+    }﻿*/
+
+   
