@@ -1,0 +1,44 @@
+		.qtyContainers {
+			/*	display: grid;
+				grid-template-columns: repeat(4, 220px);
+				/*grid-auto-columns:180px;*/
+				/*grid-gap: 10px;*/
+		}
+		.qtyContainer {
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			/*grid-template-rows: 2fr 1fr;*/
+			text-align: center;
+			font-size: 17px;
+		}
+
+		.decrement, .increment, .qtyContent {			
+			background-color: grey;
+			padding: 5px;
+		}
+
+
+		.decrement {
+			visibility: hidden;
+			border: 1px solid black;
+		}
+
+		.increment {
+			visibility: hidden;
+			border: 1px solid black;
+		}
+
+		.decrement:hover, .increment:hover {
+			cursor: pointer;
+		}
+
+		.qtyContent {
+			background-color: white;
+			border: 1px solid black;
+		}
+
+		.cancelIncrementor {
+			visibility: hidden
+			
+		}
+		
