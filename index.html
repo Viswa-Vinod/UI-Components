@@ -39,6 +39,22 @@
         </ul>
       </div>
 
+      <h2> Password Validation Form</h2>
+
+        <form>
+            <h3> Password Validation Form </h3>
+            <div class="pwdDiv">
+              <input type="password"  placeholder="enter password" 
+              oninput="validatePwd(this)" id="pwdEntry" onfocus="resetCpwd()">
+              <span class="validationMsg"></span>
+            </div>
+            <div class="cpwdDiv">
+              <input type="password"  placeholder="confirm password" 
+              oninput="validateConfirmPwd(this)" id="confirmPwd">
+              <span class="confirmMsg"></span>
+            </div>  
+            
+        </form>
       <h2>Card design</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-4">
@@ -242,6 +258,10 @@
       const qtyIncrementor = document.createElement('script');
       qtyIncrementor.src = './js/qtyIncrementor.js';
       document.head.appendChild(qtyIncrementor);
+
+      const pwdValidator = document.createElement('script');
+      pwdValidator.src = './js/pwdValidator.js';
+      document.head.appendChild(pwdValidator);
 
     </script>
   </body>

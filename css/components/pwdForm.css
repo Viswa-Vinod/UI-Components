@@ -1,0 +1,45 @@
+		form > div > input {
+			margin: 10px auto;
+			border-radius:8px;
+			padding:10px;
+			text-align: center;
+		}
+
+		form > div > input:focus {
+			box-shadow: 0 0 10px 3px rgba(0,0,0,0.4); /*spread the shadow all around the input box*/
+			border:none;
+			border-radius:8px;
+			border-bottom: 1px solid black;
+			outline:none;
+		}
+
+		.validationMsg, .confirmMsg {
+			
+			font-size: 12px;
+		}
+
+		form > div > span {
+			margin: 3px auto;
+			border:1px soid black;
+			display: none;
+			
+		}
+
+		.pwdDiv, .cpwdDiv {
+			display:flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		form {
+			padding: 10px ;
+			width: 500px;
+			margin: 20px auto;
+			border: 1px solid black;
+			border-radius: 8px;
+		}
+
+		form>h3 {
+			text-align: center;
+			padding: 10px;
+		}

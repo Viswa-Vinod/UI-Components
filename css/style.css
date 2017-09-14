@@ -16,6 +16,7 @@
 @import url("components/slantedSection.css");
 @import url("components/modal.css");
 @import url("components/qtyIncrementor.css");
+@import url("components/pwdForm.css");
 /* --- Fonts --- */
 body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
