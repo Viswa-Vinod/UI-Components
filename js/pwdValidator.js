@@ -2,6 +2,8 @@ const spanPwd = document.getElementsByClassName('validationMsg')[0];
 		const spanCPwd = document.getElementsByClassName('confirmMsg')[0];
 		const inputPwd = document.getElementById('pwdEntry');
 		const inputCPwd = document.getElementById('confirmPwd');
+		const pwdDiv = document.getElementsByClassName('pwdDiv')[0];
+		const cpwdDiv = document.getElementsByClassName('cpwdDiv')[0];
 		let validPwd = false;
 
 		const caps = /[A-Z]+/;
@@ -12,6 +14,9 @@ const spanPwd = document.getElementsByClassName('validationMsg')[0];
 		}
 
 		function validatePwd(i) {
+			validPwd = false;
+			pwdDiv.style.flexDirection = "column";
+			spanPwd.style.fontSize = "12px";
 			pwd = i.value;
 			inputCPwd.value = "";
 			spanPwd.style.display = "inline";
@@ -33,9 +38,11 @@ const spanPwd = document.getElementsByClassName('validationMsg')[0];
 					spanPwd.innerHTML = "password must have atleast one special character";
 					spanPwd.style.color = "red";
 			} else {
+				pwdDiv.style.flexDirection = "row";
 				spanPwd.innerHTML = "&#10004";
+				spanPwd.style.fontSize = "30px";
 				spanPwd.style.color = "green";
-				inputPwd.style.display = "inline";
+				// inputPwd.style.display = "inline";
 				validPwd = !validPwd;
 			}
 				
@@ -43,9 +50,12 @@ const spanPwd = document.getElementsByClassName('validationMsg')[0];
 		}
 
 		function validateConfirmPwd(i) {
+
 			const cPwd = i.value;
 			const pwd = inputPwd.value;
 			spanCPwd.style.display = "inline";
+			cpwdDiv.style.flexDirection = "column";
+			spanCPwd.style.fontSize = "12px";
 
 			if (!validPwd) {
 				i.value="";
@@ -61,8 +71,10 @@ const spanPwd = document.getElementsByClassName('validationMsg')[0];
 				spanCPwd.style.color = "red";
 			} else {
 				// inputCPwd.style.display = "inline";
+				cpwdDiv.style.flexDirection = "row";
 				spanCPwd.innerHTML = "&#10004";
 				spanCPwd.style.color = "green";
+				spanCPwd.style.fontSize = "30px";
 
 			}
 		}
